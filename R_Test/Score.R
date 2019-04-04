@@ -1,0 +1,16 @@
+number <- seq(1:4)
+name <- c("정우성", "김철수", "송중기", "김영희")
+kor <- c(80,60,90,70)
+eng <- c(70,50,95,80)
+mat <- c(95,70,95,80)
+grade <- c("B","D","A","C")
+stuInfo <- data.frame(번호 = number,이름 = name, 국어 = kor, 영어 = eng, 수학 = mat, 영어 = eng, 학점 = grade, stringsAsFactors = FALSE)
+View(stuInfo)
+
+res1 <- stuInfo$이름 ; print(res1)
+res2 <- stuInfo[[2]] ; print(res2)
+res3 <- stuInfo["이름"] ; print(res3)
+
+res4 <- stuInfo[2] ; print(res4)
+print(class(res1))
+print(class(res2))
